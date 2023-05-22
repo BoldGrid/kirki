@@ -75,6 +75,14 @@ class Kirki_Field {
 	protected $help_label = '';
 
 	/**
+	 * Help
+	 * 
+	 * @access protected
+	 * @var string
+	 */
+	protected $help = '';
+
+	/**
 	 * Help Text
 	 * 
 	 * @access protected
@@ -105,6 +113,22 @@ class Kirki_Field {
 	 * @var string
 	 */
 	protected $description = '';
+
+	/**
+	 * Location
+	 * 
+	 * @access protected
+	 * @var string
+	 */
+	protected $location = '';
+
+	/**
+	 * Items
+	 * 
+	 * @access protected
+	 * @var array
+	 */
+	protected $items = array();
 
 	/**
 	 * If we're using options instead of theme_mods
