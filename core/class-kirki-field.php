@@ -41,6 +41,71 @@ class Kirki_Field {
 	 */
 	protected $capability = 'edit_theme_options';
 
+
+	/**
+	 * Edit Vars
+	 * 
+	 * @access protected
+	 * @var array
+	 */
+	protected $edit_vars = array();
+
+	/**
+	 * Label
+	 * 
+	 * @access protected
+	 * @var string
+	 */
+	protected $label = '';
+
+	/**
+	 * Active Label
+	 * 
+	 * @access protected
+	 * @var string
+	 */
+	protected $active_label = '';
+
+	/**
+	 * Help Label
+	 * 
+	 * @access protected
+	 * @var string
+	 */
+	protected $help_label = '';
+
+	/**
+	 * Help Text
+	 * 
+	 * @access protected
+	 * @var string
+	 */
+	protected $help_text = '';
+
+	/**
+	 * Additional_controls
+	 * 
+	 * @access protected
+	 * @var array
+	 */
+	protected $additional_controls = array();
+
+	/**
+	 * FAQ Links
+	 * 
+	 * @access protected
+	 * @var array
+	 */
+	protected $faq_links = array();
+
+	/**
+	 * Description
+	 * 
+	 * @access protected
+	 * @var string
+	 */
+	protected $description = '';
+
 	/**
 	 * If we're using options instead of theme_mods
 	 * and we want them serialized, this is the option that
