@@ -21,6 +21,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 final class Kirki_Toolkit {
 
 	/**
+	 * Modules. 
+	 * 
+	 * @access public
+	 * @var Kirki_Modules
+	 */
+	public $modules;
+
+	/**
 	 * Holds the one, true instance of this object.
 	 *
 	 * @static
