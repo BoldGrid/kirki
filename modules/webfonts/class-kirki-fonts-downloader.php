@@ -138,6 +138,14 @@ class Kirki_Fonts_Downloader {
 	 * @return string            Returns the remote URL contents.
 	 */
 	public function get_cached_url_contents( $url = '', $user_agent = null ) {
+		// If invalid 'font' files were downloaded, clear them and get new files.
+		foreach ( get_option( 'kirki_downloaded_font_files', array() ) as $key => $value ) {
+			if ( 'font' === substr( $value, -4 ) ) {
+				update_option( 'kirki_downloaded_font_files', array() );
+				delete_transient( 'kirki_remote_url_contents' );
+				break;
+			}
+		}
 
 		// Try to retrieved cached response from the gfonts API.
 		$contents         = false;
